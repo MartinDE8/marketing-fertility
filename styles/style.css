@@ -48,6 +48,8 @@ nav{
   transition: all 0.3s ease;
 }
 
+/* Responsiveness - tablet & small devices */
+
 @media screen and (max-width:768px){
 
   body{
@@ -331,11 +333,12 @@ em{
   width: 100%;
   height: auto;
   text-align: center;
+  padding: 32px 0px 32px 0px;
 }
 
 .tile-container{
-  width: 90%;
-  height: 70vh;
+  width: 70%;
+  height: 60vh;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -359,9 +362,12 @@ em{
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background: #ffc728;
-  color: #333;
+  background: #b1cf4d;
+  color: #fff;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .back {
@@ -369,8 +375,38 @@ em{
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background: #fafafa;
-  color: #333;
+  background: #515151;
+  color: #fff ;
   transform: rotateY(180deg);
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100%;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.fa-search{
+  font-size: 4rem;
+}
+
+.fa-chart-line{
+  font-size: 4rem;
+}
+
+.fa-handshake{
+  font-size: 4rem;
+}
+
+.fa-users{
+  font-size: 4rem;
+}
+
+.fa-piggy-bank{
+  font-size: 4rem;
+}
+
+.fa-clipboard-check{
+  font-size: 4rem;
 }
