@@ -83,8 +83,8 @@ nav{
   }
 
   .nav-call{
-    display: none;
-  }
+    display: hidden
+    }
 
   .banner-buttons{
     display: inline-flex;
@@ -101,6 +101,14 @@ nav{
 
   .card-category{
     width: 100%
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
   }
 }
 
@@ -133,7 +141,7 @@ nav{
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-#img-logo{
+.img-logo{
   width: 80px;
   display: block;
   height: auto;
@@ -141,7 +149,7 @@ nav{
   margin: 8px;
 }
 
-#img-logo:hover{
+.img-logo:hover{
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -496,3 +504,59 @@ label {
 .contact-text{
   margin-bottom: 32px;
 }
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-logo{
+  height: auto;
+}
+
+.fontawesome-box{
+  font-size: 2rem;
+}
+
+.copy{
+  font-size: 1rem;
+  color: #b1cf4d;
+  font-weight: bolder;
+}
+
+.fa-instagram{
+  color: #b1cf4d;
+  margin-right: 16px;
+}
+
+.fa-instagram:hover{
+  color: #042da9;
+  transform: scale(1.2);
+}
+
+.fa-twitter{
+  color: #b1cf4d;
+  margin-right: 16px;
+}
+
+.fa-twitter:hover{
+  color: #042da9;
+  transform: scale(1.2);
+}
+
+.fa-linkedin{
+  color: #b1cf4d;
+  margin-right: 16px;
+}
+
+.fa-linkedin:hover{
+  color: #042da9;
+  transform: scale(1.2);
+}
+
+
+
+
+
+
