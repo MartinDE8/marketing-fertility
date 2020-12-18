@@ -413,11 +413,12 @@ em{
 
 .box{
   width: 100%;
-  height: 580px;
+  height: 640px;
   background-size: cover;
   background-position: 50% 50%;
   object-fit: cover;
   text-align: center;
+  padding: 32px;
 
 }
 

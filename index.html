@@ -161,9 +161,39 @@
     <div class="box" style="background-image: url('images/splash.png')">
       <h2>Contact us.</h2>
       <div>
-        <div class="form">
-          <input type="text" name="name" autocomplete="off" required>
+        <div class="form-div">
+          <form id="contact-form" action="#">
+            <div class="form-group">
+              <label id="name-label" for="name">Your Name</label>
+              <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+            </div>
+
+            <div class="form-group">
+              <label id="phone-label" for="phone">Phone Number</label>
+              <input type="text" name="phone" id="phone" class="form-control" placeholder="Enter your phone number"/>
+            </div>
+
+            <div class="form-group">
+              <label id="email-label" for="email">Email</label>
+              <input type="text" name="email" id="email" class="form-control" placeholder="Enter your email"/>
+            </div>
+
+            <div class="form-group">
+              <p>Preferred Method of Contact:</p>
+              <label>
+                <input name="preferred-contact" value="phone" type="checkbox" class="input-checkbox"/>Phone
+              </label>
+              <label>
+                <input name="preferred-contact" value="email" type="checkbox" class="input-checkbox"/>Email
+              </label>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" id="submit" class="submit-button">Let's make a splash!</button>
+            </div>
+          </form>
         </div>
+
       </div>
     </div>
 
