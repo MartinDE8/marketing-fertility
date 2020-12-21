@@ -20,16 +20,16 @@
 <body>
 
   <!--  Navbar  -->
-  <nav>
+  <nav id="home">
     <div class="logo">
       <img class="img-logo" src="images/logo-small.png" alt="logo of the company">
     </div>
     <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Our Services</a></li>
-      <li><a href="#">Our Work</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Our Services</a></li>
+      <li><a href="#work">Our Work</a></li>
+      <li><a href="#engagements">About</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="burger">
       <div class="line1"></div>
@@ -37,7 +37,7 @@
       <div class="line3"></div>
     </div>
     <div class="nav-call">
-      <button class="quote-button-small navbar-but">Request a quote</button>
+      <button onClick='window.location="#contact"' class="quote-button-small navbar-but">Request a Quote!</button>
       <i class="fas fa-phone navbar-i"><a class="phone-redirect" href="tel:+1760-456-5802"> 760-456-5802</a></i>
     </div>
   </nav>
@@ -58,13 +58,13 @@
             <h3><em>Let's make a splash with Marketing!</em></h3>
           </div>
           <div class="banner-buttons">
-            <button class="quote-button-small frombanner">Request a Quote!</button>
+            <button onClick='window.location="#contact"' class="quote-button-small frombanner">Request a Quote!</button>
           </div>
         </div>
       </div>
 
 <!--  Our Services  -->
-    <div class="container">
+    <div id="services" class="container">
       <div class="text-top">
         <h2>Our Services.</h2>
       </div>
@@ -85,7 +85,7 @@
     </div>
 
     <!--  Our Work  -->
-    <div class="container">
+    <div id="work" class="container">
       <div class="text-top">
         <h2>Our Work.</h2>
       </div>
@@ -97,7 +97,7 @@
     </div>
 
     <!-- Previous Engagements  -->
-    <div class="engagement-container">
+    <div id="engagements" class="engagement-container">
       <div class="text-top">
         <h2>Previous Engagements.</h2>
       </div>
@@ -162,7 +162,7 @@
 
     <!-- Contact Form -->
 
-    <div class="box" style="background-image: url('images/splash.png')">
+    <div id="contact" class="box" style="background-image: url('images/splash.png')">
       <h2 class='contact-text'>Contact us.</h2>
       <div>
         <div class="form-div">
@@ -210,11 +210,11 @@
       </div>
       <div class="links-box">
         <ul class="nav-links">
-         <li><a href="#">Home</a></li>
-         <li><a href="#">Our Services</a></li>
-         <li><a href="#">Our Work</a></li>
-         <li><a href="#">About</a></li>
-         <li><a href="#">Contact</a></li>
+         <li><a href="#home">Home</a></li>
+         <li><a href="#services">Our Services</a></li>
+         <li><a href="#work">Our Work</a></li>
+         <li><a href="#engagements">About</a></li>
+         <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <div class="copy-box">
@@ -224,7 +224,7 @@
 
   <!-- JS Scripts Do Not Remove-->
   <script src="scripts/index.js"></script>
-
+  <script src="scripts/autoscroll.js"></script>
 </body>
 
 </html>
