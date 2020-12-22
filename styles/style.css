@@ -224,7 +224,8 @@ ul{
 
 .phone-redirect{
   text-decoration: none;
-  color: #042da9;
+  color: #36454f;
+  font-size: 18px;
 }
 
 .phone-redirect:hover{
@@ -233,7 +234,8 @@ ul{
 }
 
 .fa-phone{
-  color: #042da9;
+  color: #36454f;
+  font-size: 18px;
 }
 
 .banner{
