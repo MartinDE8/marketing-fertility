@@ -11,6 +11,8 @@
   <!--  Styles  -->
   <link rel="stylesheet" href="styles/style.css">
 
+  <!-- AOS animation on scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!--  Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
@@ -18,7 +20,6 @@
 </head>
 
 <body>
-
   <!--  Navbar  -->
   <nav id="home">
     <div class="logo">
@@ -38,17 +39,17 @@
     </div>
     <div class="nav-call">
       <button onClick='window.location="#contact"' class="quote-button-small navbar-but">Request a Quote!</button>
-      <i class="fas fa-phone navbar-i"><a class="phone-redirect" href="tel:+1760-456-5802"> 760-456-5802</a></i>
+      <div class="phone-box" style="background-image: url(images/green-box.png); opacity: 0.8"><i class="fas fa-phone navbar-i"><a class="phone-redirect" href="tel:+1760-456-5802"> 760-456-5802</a></i></div>
     </div>
   </nav>
 
-<!--  Above fold video  -->
+    <!--  Above fold video  -->
     <div class="banner">
 
-      <!-- Arrow scroll up on Click -->
+    <!-- Arrow scroll up on Click -->
     <a class="gotopbtn" href="#"><i class="fas fa-chevron-circle-up"></i></a>
 
-      <!-- Video -->
+        <!-- Video -->
         <video id="wave-video" class='wave-video' autoplay loop muted>
           <source src="images/wave.mp4" type="video/mp4">
         </video>
@@ -65,20 +66,44 @@
         </div>
       </div>
 
-<!--  Our Services  -->
-    <div id="services" class="container">
-      <div class="text-top">
-        <h2>Our Services.</h2>
+    <!-- Our Services -->
+    <div class="container">
+      <div class="column-box">
+        <h2 class="service-title">Our Services.</h2>
+        <div class="card-product" data-aos="fade-up-left">
+          <div class="effect">
+            <img src="images/covid.png" />
+          </div>
+          <div class="card-product-infos">
+            <h2>Covid-19 Safety</h2>
+            <p>Keeping your patients safe is your priority—telling them about the COVID-19 precautions you’re taking to protect them is ours. We’ll make sure that each and every lead knows that you’re going above and beyond to keep them safe.</p>
+          </div>
+        </div>
+
+        <div class="card-product" data-aos="fade-up-right">
+          <div class="card-product-infos">
+            <h2>Patient-Centered Web Design</h2>
+            <p>User experience (UX) design focuses on the way people interact with your site. We make your website ultra-responsive and incredibly easy to navigate, so that patients can find everything they need quickly and you can streamline your practice’s workflow.</p>
+          </div>
+          <div class="effect">
+            <img src="images/ux.png"/>
+          </div>
+        </div>
+
+        <div class="card-product" data-aos="fade-up-left">
+          <div class="effect">
+            <img src="images/seo.png" />
+          </div>
+          <div class="card-product-infos">
+            <h2>Search Engine Optimization</h2>
+            <p>For your practice to thrive, future patients have to be able to find you. We take an aggressive approach to helping you rank competitively in search engine results to increase traffic to your site and to keep patients coming in.</p>
+          </div>
+        </div>
       </div>
-      <div class="service-container">
-        <div class="card-category" style="background-image: url('images/covid.png'), linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))"><span>  Assuring Patients About Covid Safety?  </span></div>
-        <div class="card-category" style="background-image: url('images/ux.png'), linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))"><span>  UX Webdesign  </span></div>
-        <div class="card-category" style="background-image: url('images/seo.png'),linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))"><span>  SEO  </span></div>
-     </div>
     </div>
 
  <!--  Customer Review  -->
-    <div class="review-section">
+    <div class="review-section" data-aos="fade-down">
       <h2><i class="fas fa-quote-right"></i><br>Our customers love what we do!</h2>
       <div class="review">
         <p class="review-text"><i>"Fertility Marketing is unlike any other marketing agency we have worked with before. Their professionalism, expertise in medical marketing and dedidcation to our needs is exceptional."</i><br><br><em>Dr. Troche, Troche Fertility Centers</em></p>
@@ -86,16 +111,40 @@
       </div>
     </div>
 
-    <!--  Our Work  -->
-    <div id="work" class="container">
-      <div class="text-top">
-        <h2>Our Work.</h2>
+     <!--  Our Work  -->
+     <div class="container">
+      <div class="column-box">
+        <h2 class="service-title">Our Services.</h2>
+        <div class="card-product" data-aos="fade-up-left">
+          <div class="effect">
+            <img src="images/paidadv.jpg" class="paidadv"/>
+          </div>
+          <div class="card-product-infos">
+            <h2>Paid Advertising</h2>
+            <p>Don’t waste money on ads that don’t attract patients. We create digital advertisements that fully connect with your audience to create a steady stream of leads for you.</p>
+          </div>
+        </div>
+
+        <div class="card-product" data-aos="fade-up-right">
+          <div class="card-product-infos">
+            <h2>Marketing Research and Maintenance</h2>
+            <p>We constantly research the best marketing and lead-generation practices to ensure that your marketing plan incorporates the best strategies.</p>
+          </div>
+          <div class="effect">
+            <img src="images/marketing.jpg" class="market"/>
+          </div>
+        </div>
+
+        <div class="card-product" data-aos="fade-up-left">
+          <div class="effect">
+            <img src="images/cybersecu.jpg" />
+          </div>
+          <div class="card-product-infos">
+            <h2>Cybersecurity</h2>
+            <p>Your patients’ medical history, along with the rest of your practice’s data, absolutely must be fully protected. We ensure that your website is safe, secure, and encrypted for you and your patients’ peace of mind. your patients.</p>
+          </div>
+        </div>
       </div>
-      <div class="service-container">
-        <div class="card-category" style="background-image: url('images/paidadv.jpg'), linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))"><span>  Paid Advertising  </span></div>
-        <div class="card-category" style="background-image: url('images/marketing.jpg'), linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))"><span>  Marketing Research and Maintenance  </span></div>
-        <div class="card-category" style="background-image: url('images/cybersecu.jpg'),linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))"><span>  Cybersecurity  </span></div>
-     </div>
     </div>
 
     <!-- Previous Engagements  -->
@@ -168,7 +217,7 @@
       <h2 class='contact-text'>Contact us.</h2>
       <div>
         <div class="form-div">
-          <form id="contact-form" action="#">
+          <form id="contact-form" data-aos="flip-left" action="#">
             <div class="form-group">
               <label id="name-label" for="name">Your Name</label>
               <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
@@ -185,7 +234,7 @@
             </div>
 
             <div class="form-group">
-              <label>Preferred Method of Contact</label>
+              <label class="preferred-method">Preferred Method of Contact</label>
               <label class="checkbox-label">
                 <input name="preferred-contact" value="phone" type="checkbox" class="input-checkbox"/>Phone
               </label>
@@ -204,7 +253,7 @@
     </div>
 
     <!-- Footer -->
-    <div class="footer">
+    <div class="footer" id="cf">
       <div class="fontawesome-box">
         <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -227,6 +276,13 @@
   <!-- JS Scripts Do Not Remove-->
   <script src="scripts/index.js"></script>
   <script src="scripts/autoscroll.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration: 1600,
+        easing: 'ease-out-back'
+      });
+  </script>
 </body>
 
 </html>
