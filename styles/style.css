@@ -84,8 +84,7 @@ ul{
   }
 
   #home img{
-    width: 50%;
-    margin-left: 55px;
+    width: 70%;
   }
 
   #home .nav-call{
@@ -96,13 +95,13 @@ ul{
   .nav-links{
     position: absolute;
     right: 0px;
-    height: 84vh;
-    top: 16vh;
+    height: 85vh;
+    top: 15vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
-    transform: translateX(100%);
+    transform: translateX(-200%);
     transition: transform 0.5s ease-in;
     background-color: #fff;
     z-index: 101;
@@ -181,20 +180,23 @@ ul{
   }
 
   .container .card-product{
-    width: 70%;
+    width: 85%;
   }
 
   .container .card-product p{
-    font-size: 12px;
-    width: 180px;
+    font-size: 10px;
   }
 
   .container .card-product h2{
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .container .card-product-infos{
     padding: 16px;
+  }
+
+  .container .card-product .effect{
+    width: 500%;
   }
 
   .review-section .review .review-text{
@@ -221,11 +223,34 @@ ul{
   #contact .form-div #contact-form .form-group .checkbox-label{
     font-size: 16px;
   }
+
+  #engagements .fa-search{
+    font-size: 2.5rem;
+  }
+
+  #engagements .fa-chart-line{
+    font-size: 2.5rem;
+  }
+
+  #engagements .fa-handshake{
+    font-size: 2.5rem;
+  }
+
+  #engagements .fa-users{
+    font-size: 2.5rem;
+  }
+
+  #engagements .fa-piggy-bank{
+    font-size: 2.5rem;
+  }
+
+  #engagements .fa-clipboard-check{
+    font-size: 2.5rem;
+  }
 }
 
-
 .nav-active{
-  transform: translateX(0%);
+  transform: translateX(-101%);
 }
 
 @keyframes navLinkFade{
