@@ -88,11 +88,16 @@ ul{
     margin-left: 55px;
   }
 
+  #home .nav-call{
+    width: 0px;
+  }
+
+
   .nav-links{
     position: absolute;
     right: 0px;
-    height: 86vh;
-    top: 14vh;
+    height: 84vh;
+    top: 16vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -164,6 +169,11 @@ ul{
     justify-content: space-around;
     align-items: center;
     text-align: center;
+  }
+
+  .footer .links-box .nav-links{
+    display: none;
+    overflow-x: hidden;
   }
 
   .copy{
