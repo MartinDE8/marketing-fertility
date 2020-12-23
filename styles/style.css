@@ -76,6 +76,10 @@ ul{
     justify-content: space-around;
   }
 
+  #home img{
+    width: 50%;
+  }
+
   .nav-links{
     position: absolute;
     right: 0px;
@@ -90,7 +94,6 @@ ul{
     background-color: #fff;
     z-index: 101;
     margin: 0px;
-
   }
 
   .nav-links li{
@@ -102,11 +105,11 @@ ul{
     cursor: pointer;
   }
 
-  #img-div{
-    width: 80px;
+  .navbar-but{
+    display: none;
   }
 
-  .navbar-but{
+  .nav-call .phone-box{
     display: none;
   }
 
