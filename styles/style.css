@@ -17,8 +17,7 @@ nav{
   width: 100%;
   margin: auto;
   background-color: #fff;
-  position: fixed;
-  z-index: 150;
+
 
 }
 ul{
@@ -72,12 +71,17 @@ ul{
   overflow-x: hidden;
   }
 
+  h2{
+    font-size: 18px;
+  }
+
   nav{
     justify-content: space-around;
   }
 
   #home img{
     width: 50%;
+    margin-left: 55px;
   }
 
   .nav-links{
@@ -94,6 +98,11 @@ ul{
     background-color: #fff;
     z-index: 101;
     margin: 0px;
+  }
+
+  .nav-links a{
+    font-size: 14px;
+    font-weight: bold;
   }
 
   .nav-links li{
@@ -119,6 +128,14 @@ ul{
 
   .nav-call i{
     display: none;
+  }
+
+  .banner h1{
+    font-size: 2.5rem;
+  }
+
+  .banner h3{
+    font-size: 1.5rem;
   }
 
   .banner-buttons{
@@ -147,6 +164,48 @@ ul{
 
   .copy{
     margin-bottom: 16px;
+  }
+
+  .container .card-product{
+    width: 70%;
+  }
+
+  .container .card-product p{
+    font-size: 12px;
+    width: 180px;
+  }
+
+  .container .card-product h2{
+    font-size: 18px;
+  }
+
+  .container .card-product-infos{
+    padding: 16px;
+  }
+
+  .review-section .review .review-text{
+    font-size: 24px;
+  }
+
+  #engagements .tile-container{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #contact .form-div #contact-form{
+    width: 80%;
+  }
+
+  #contact .form-div #contact-form .form-group{
+    flex-direction: column;
+  }
+
+  #contact .form-div #contact-form .form-group label{
+    width: 100%;
+    font-size: 16px;
+  }
+
+  #contact .form-div #contact-form .form-group .checkbox-label{
+    font-size: 16px;
   }
 }
 
@@ -255,18 +314,9 @@ ul{
 
 }
 
-.above-banner{
-  position: relative;
-  top: 93px;
-}
 
 .banner-text{
   margin-bottom: 32px;
-}
-
-#service{
-  position: relative;
-  top: 93px;
 }
 
 #wave-video{
@@ -278,7 +328,6 @@ ul{
   height: 84vh;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   object-fit: cover;
 }
@@ -304,11 +353,8 @@ h3 {
   width: 100%;
   margin: auto;
   text-align: center;
-  margin-top: 32px;
   margin-bottom: 32px;
   height: auto;
-  position: relative;
-  top: 93px;
 }
 
 
@@ -319,7 +365,7 @@ h3 {
 }
 
 .text-top{
-  margin: 32px auto 32px auto;
+  margin: 0px auto 32px auto;
 }
 
 
@@ -365,8 +411,6 @@ span{
   text-align: center;
   background-color: #eeeef0;
   padding: 16px;
-  position: relative;
-  top: 93px;
 }
 
 .fa-quote-right{
@@ -404,9 +448,7 @@ em{
   height: auto;
   text-align: center;
   padding: 32px 0px 32px 0px;
-  position: relative;
-  top: 93px;
-}
+  }
 
 .tile-container{
   width: 70%;
@@ -491,9 +533,6 @@ em{
   object-fit: cover;
   text-align: center;
   padding: 32px;
-  position: relative;
-  top: 93px;
-
 }
 
 .footer{
@@ -582,8 +621,6 @@ label {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: relative;
-  top: 93px;
   background-color: #36454f;
 }
 
